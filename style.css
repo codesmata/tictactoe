@@ -1,0 +1,153 @@
+body {
+    background-color: #ecf0f1;
+}
+
+section {
+    width: 30%;
+    color: #fff;
+    margin: 0 auto;
+    background-color: #000;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 5em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #5C5C5C;
+    text-align: center;
+}
+
+#turns {
+    display: block;
+    font-size: .5em;
+    margin: 0;
+    padding: 0;
+}
+
+#parent_frame {
+    background: black;
+    background: -webkit-radial-gradient(circle, #c39bd3 , #af7ac5  70%);
+    background: -o-radial-gradient(circle, #c39bd3 , #af7ac5  70%);
+    background: -moz-radial-gradient(circle, #c39bd3 , #af7ac5  70%);
+    background: radial-gradient(circle, #c39bd3 , #af7ac5  70%);
+    margin: 0 auto;
+    width: 80%;
+    padding: .5em;
+    height: 350px;
+}
+
+.container {
+    width: 100%;
+}
+.row {
+    margin-bottom: 8px;
+}
+
+/** GENERIC FRAME **/
+.frame p {
+    color:  #34495e;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.frame p span {
+    font-size: 1em;
+}
+
+span.option_links:hover {
+    color: #85929e ;
+    cursor: pointer;
+    border: 3px solid #85929e;
+}
+
+/** INITIAL FRAME **/
+#initial_frame {
+    display: none;
+}
+
+#initial_frame p span{
+    font-size: 2em;
+}
+
+/** END FRAME **/
+#end_frame {
+    display: none;
+}
+
+/** GAME FRAME **/
+
+#game_frame {
+    display: none;
+}
+
+#score_panel {
+    font-size: .7em;
+}
+
+#reset_game {
+    margin-left: 1em;
+}
+
+#game_panel {
+    margin: 0 auto;
+}
+
+#game_panel .row {
+    margin: 0;
+    text-align: center;
+}
+
+#game_panel .row .cell{
+    height: 2em;
+    padding: 0;
+    margin: 0;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #F9E79F;
+    font-weight: bolder;
+}
+
+.cell-2, .cell-5, .cell-8 {
+    border-left: 3px solid #34495e;
+    border-right: 3px solid #34495e;
+}
+
+.cell-4, .cell-5, .cell-6 {
+    border-top: 3px solid #34495e;
+    border-bottom: 3px solid #34495e;
+}
+
+/*.cell-4 span, .cell-5 span, .cell-6 span {
+  color: #7D6608;
+}*/
+
+/*.cell-1, .cell-5, .cell-9 {
+  background: black;
+}*/
+
+
+/**
+-- Media Screen qUERIES
+**/
+@media (max-width: 1280px) {
+    section {
+        width: 25%;
+    }
+}
+
+@media (max-width: 980px) {
+    section {
+        width: 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    section {
+        width: 40%;
+    }
+}
+
+@media (max-width: 360px) {
+    section {
+        width: 90%;
+    }
+}
